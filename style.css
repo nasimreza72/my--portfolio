@@ -52,18 +52,49 @@ nav {
     letter-spacing: 1px;
 }
 
+.letter-n{
+    color: rgb(255, 187, 0);
+     font-size: 2.3rem;
+}
+
+.letter-r{
+    color: rgb(86, 209, 209); 
+    font-size: 1.6rem;
+}
+
+.left-nav h1:hover{
+    color: rgb(86, 209, 209);
+    animation: wiggle 250ms infinite;
+  animation-timing-function: linear; 
+    position: relative;
+
+}
+.letter-r:hover{
+    color: rgb(255, 187, 0);
+}
+.letter-n:hover{
+    color: rgb(86, 209, 209);
+}
+
+@keyframes wiggle {
+    0% { transform: translate(2px, 0); color: rgb(0, 255, 106); }
+    50% { transform: translate(-2px, 0); color: rgb(255, 136, 0);}
+    100% { transform: translate(2px, 0); color: rgb(72, 255, 0); }
+  }
+  
 
 .left-nav p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -1.3rem;
+    margin-top: -1.2rem;
+    font-size: 1.1rem;
 
 }
 
 .fa-laptop-code {
     text-shadow: none;
-    font-size: .8rem;
+    font-size: 1rem;
     opacity: .5;
 }
 
@@ -92,20 +123,21 @@ nav {
 }
 
 .right-nav p a {
-    background-color:;
     font-weight: bold;
-    padding: 10px 20px;
+    padding: 10px 20px 12px;
     border-radius: 5px;
     color: rgb(0, 0, 0);
     text-decoration: none;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     background-color: rgba(255, 212, 93, 0.726);
     letter-spacing: 1.5px;
+    font-size: 1.2rem;
 }
 
 .right-nav :hover{
     background-color: black;
     color: rgb(255, 187, 0);
+    text-transform: capitalize;
 }
 
 .container-1 {
@@ -139,6 +171,44 @@ nav {
     text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5);
 }
 
+.sub-container-1 h5{
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+
+.sub-container-1 ul{
+    list-style-type:;
+    padding-left: 30px;
+    line-height: normal;
+    font-size: 1.15rem;
+}
+
+.sub-container-1 .wrapper-p{
+    visibility: hidden;
+    animation-name: wrapper-p;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    transition: ease-in-out;
+    animation-delay: 5s;
+}
+
+@keyframes wrapper-p {
+
+    from{
+        opacity: 0;
+        right: -500px;
+        visibility: visible;
+        transform: scale(.5);
+    }
+    to{
+        opacity: 1;
+        right:0px;
+        visibility: visible;
+    }
+    
+}
+
 .sub-container-1 .contact-me{
     width: 100%;
     margin-top: 5%;
@@ -160,14 +230,17 @@ button a{
     text-decoration: none;
     font-size: 1rem;
     font-weight:600;
+    transition: .5s ease-in-out;
 }
 
 button:first-child:hover a{
     color: rgb(255, 187, 0) ;
+    text-transform: capitalize;
 }
 
 button:last-child:hover a{
     color: rgb(86, 209, 209);
+    text-transform: capitalize;
 }
 
 .sub-container-1 .contact-me button:first-child:hover{
@@ -299,7 +372,7 @@ button:last-child:hover a{
     }
 
     to {
-        width: 10.8em;
+        width: 9.6em;
         color: #6bcbe9;
     }
 }
