@@ -7,9 +7,10 @@
 
 body {
     width: 100%;
-    background-image: url(https://images.unsplash.com/photo-1586775490184-b79f0621891f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+    background-image: url(./image/body.png);
+    background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-color: rgb(190, 148, 121);
     font-family: 'IM Fell English SC', serif;
     font-family: 'Titillium Web', sans-serif;
     text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5);
@@ -17,31 +18,36 @@ body {
 }
 
 nav {
-    width: 95%;
-    margin-left: 2.5%;
+    width: 92%;
+    margin-left: 4%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    top: 4%;
-    z-index: 10;
-    animation-name: nav-hover ;
-    animation-duration: 1s;
+    top: 5%;
+    z-index: 1;
+    animation-name: nav-hover;
+    animation-duration: 1.5s;
     transition: ease-in-out;
     font-size: 1.3rem;
+    border-bottom: 1px solid gray;
+    border-radius: .5px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 2px 0px;
+    
 }
 
 @keyframes nav-hover {
-    0%{
+    0% {
         opacity: 0;
         top: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
 
-.left-nav{
+.left-nav {
     color: rgb(99, 99, 99);
     letter-spacing: 1px;
 }
@@ -61,33 +67,33 @@ nav {
     opacity: .5;
 }
 
-.center-nav ul{
+.center-nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
     list-style-type: none;
 }
 
-.center-nav ul li{
+.center-nav ul li {
     margin-left: 2vw;
 }
 
-.center-nav ul li a{
+.center-nav ul li a {
     text-decoration: none;
     color: rgb(61, 61, 61);
 }
 
-.right-nav p a{ 
-    background-color: rgb(240, 206, 112);
+.right-nav p a {
+    background-color: rgb(255, 205, 67);
     font-weight: bold;
-    padding:0 1vw .25vw 1vw;
+    padding: 0 1vw .25vw 1vw;
     border-radius: 5px;
     border: 1.5px solid gray;
     color: rgb(255, 255, 255);
-    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1), 1px 1px 1px rgba(0, 0, 0, .8);
+    text-shadow: -1px -1px 1px rgba(109, 109, 109, 0.5), 1px 1px 1px rgba(0, 0, 0, .8);
     cursor: pointer;
     letter-spacing: 1px;
-    box-shadow: rgba(133, 133, 168, 0.171) 0px 15px 30px -6px inset, rgba(0, 0, 0, 0.3) 0px 6px 18px -9px inset;
+    box-shadow: rgba(58, 58, 58, 0.171) 0px 15px 30px -6px inset, rgba(0, 0, 0, 0.3) 0px 6px 18px -9px inset;
     text-decoration: none;
 }
 
@@ -95,10 +101,18 @@ nav {
     margin: 5vh auto;
     width: 96%;
     height: 90vh;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.911);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.89);
     display: flex;
+    border-bottom: 3px solid gray;
+}
+
+.container-1 p {
+    width: 65%;
+    line-height:1.5rem;
+    margin-top: 3%;
+    letter-spacing: .5px;
 }
 
 .sub-container-1 {
@@ -106,64 +120,89 @@ nav {
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: ;
+    padding: 0% 5%;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     font-size: 1.2rem;
-    letter-spacing: 2px;
     line-height: 45px;
     text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5);
 }
 
+.sub-container-1 .contact-me{
+    display: flex;
+    width: 100%;
+    margin-top: 5%;
+    
+}
+
+.sub-container-1 .contact-me p a{
+    text-decoration: none;
+    color: black;
+    padding: 4% 5%;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    letter-spacing: .5px;
+}
+
+.sub-container-1 .contact-me p:last-child a{
+    position: relative;
+    right: 58%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background-color: rgba(177, 233, 255, 0.555);
+}
+
+.sub-container-1 .contact-me p:first-child a{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background-color: rgba(255, 212, 93, 0.726);
+    
+}
 .sub-container-2 {
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     animation-name: nasim;
-    animation-duration: 1s;
-    transform: scale(.75);
+    animation-duration: 5s;
+    transform: scale(.75); 
 }
 
 .sub-container-2 img {
-    width: 60%;
-    height: 60%;
+    width: 45%;
+    height: 45%;
     border-radius: 50%;
     border: #c78c67af solid 1.1vw;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    z-index: 1;
+    box-shadow: rgba(248, 181, 119, 0.363) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     transform: rotate(-5deg);
-    position: relative;
 }
 
 
 .first-border {
-    width: 50%;
-    height: 50%;
+    width: 45%;
+    height: 45%;
     border-radius: 50%;
-    border: 1vw solid #a0a0a0a1;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    background-size: 100%;
+    border: 1vw solid #ccbe71c9;
+    box-shadow: rgba(172, 156, 66, 0.774) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     position: absolute;
-    top: 16%;
-    right: 30%;
+    background-size: 100%;
+    top: 25%;
+    left: 28%;
 }
 
 .second-border {
-    width: 50%;
-    height: 50%;
+    width: 45%;
+    height: 45%;
     border-radius: 50%;
-    z-index: -1;
-    top: 60px;
-    left: 80px;
     border: #75daf85d solid 1vw;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    box-shadow: rgba(94, 168, 187, 0.397) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     position: absolute;
-    top: 32.5%;
-    left: 33%;
+    top: 25%;
+    right: 30%;
 }
 
 
-@keyframes nasim {
+/* @keyframes nasim{
     0% {
         transform: scale(.7);
     }
@@ -171,16 +210,17 @@ nav {
     100% {
         transform: scale(.75);
     }
-}
+} */
 
 
 .line-1,
 .line-2 {
     width: 100%;
-    border-right: 2px solid rgba(0, 0, 0, 0.75);
+    border-right: 1px solid rgba(0, 0, 0, 0.75);
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
+    letter-spacing: 1px;
 }
 
 .line-2 {
@@ -204,7 +244,7 @@ nav {
     }
 
     to {
-        width: 19em;
+        width: 18em;
         color: #f1ac51;
     }
 }
@@ -222,11 +262,10 @@ nav {
 @keyframes typewriter-2 {
     from {
         width: 0;
-        color;
     }
 
     to {
-        width: 10em;
+        width: 10.8em;
         color: #6bcbe9;
     }
 }
@@ -237,30 +276,6 @@ nav {
     }
 
     to {
-        border-right-color: transparent;
+        border-right-color: transparent;;
     }
 }
-
-.type{
-    width: 8rem;
-    position: absolute;
-    bottom: 43.5%;
-    left: 40%;
-    border-radius: 50%;
-    animation: typing .25s  .25s 23 normal;
-    visibility: hidde;
-}
-
-@keyframes typing {
-    0%{
-        visibility: visible;
-        opacity: .85;
-        transform: scaleX(.95) rotate(.2deg);
-    }
-
-    100%{
-        opacity: 1;
-        visibility: hidden;
-    }
-}
-
