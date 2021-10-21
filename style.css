@@ -81,20 +81,31 @@ nav {
 .center-nav ul li a {
     text-decoration: none;
     color: rgb(61, 61, 61);
+    transition: .5s ease-in-out;
+}
+
+.center-nav ul li a:hover{
+    color:  rgb(255, 187, 0);
+    text-transform: uppercase;
+    font-weight: 600;
+    border-bottom: 1.5px solid rgb(255, 187, 0); 
 }
 
 .right-nav p a {
-    background-color: rgb(255, 205, 67);
+    background-color:;
     font-weight: bold;
-    padding: 0 1vw .25vw 1vw;
+    padding: 10px 20px;
     border-radius: 5px;
-    border: 1.5px solid gray;
-    color: rgb(255, 255, 255);
-    text-shadow: -1px -1px 1px rgba(109, 109, 109, 0.5), 1px 1px 1px rgba(0, 0, 0, .8);
-    cursor: pointer;
-    letter-spacing: 1px;
-    box-shadow: rgba(58, 58, 58, 0.171) 0px 15px 30px -6px inset, rgba(0, 0, 0, 0.3) 0px 6px 18px -9px inset;
+    color: rgb(0, 0, 0);
     text-decoration: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background-color: rgba(255, 212, 93, 0.726);
+    letter-spacing: 1.5px;
+}
+
+.right-nav :hover{
+    background-color: black;
+    color: rgb(255, 187, 0);
 }
 
 .container-1 {
@@ -109,10 +120,10 @@ nav {
 }
 
 .container-1 p {
-    width: 65%;
     line-height:1.5rem;
     margin-top: 3%;
     letter-spacing: .5px;
+    padding-right: 35%;
 }
 
 .sub-container-1 {
@@ -129,29 +140,52 @@ nav {
 }
 
 .sub-container-1 .contact-me{
-    display: flex;
     width: 100%;
     margin-top: 5%;
-    
+    display: flex;
+    justify-content: start;
 }
 
-.sub-container-1 .contact-me p a{
-    text-decoration: none;
+.sub-container-1 .contact-me button{
     color: black;
-    padding: 4% 5%;
-    border: 1.5px solid black;
+    padding: 2.5% 4%;
     border-radius: 5px;
     letter-spacing: .5px;
+    transition: .5s ease-in-out;
+    border: none;
 }
 
-.sub-container-1 .contact-me p:last-child a{
-    position: relative;
-    right: 58%;
+button a{
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight:600;
+}
+
+button:first-child:hover a{
+    color: rgb(255, 187, 0) ;
+}
+
+button:last-child:hover a{
+    color: rgb(86, 209, 209);
+}
+
+.sub-container-1 .contact-me button:first-child:hover{
+    background-color: rgb(0, 0, 0);
+}
+
+.sub-container-1 .contact-me button:last-child:hover{
+    background-color: rgb(0, 0, 0);
+}
+
+.sub-container-1 .contact-me button:last-child{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     background-color: rgba(177, 233, 255, 0.555);
+    margin-left: 2%;
+
 }
 
-.sub-container-1 .contact-me p:first-child a{
+.sub-container-1 .contact-me button:first-child{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     background-color: rgba(255, 212, 93, 0.726);
     
@@ -164,7 +198,7 @@ nav {
     align-items: center;
     animation-name: nasim;
     animation-duration: 5s;
-    transform: scale(.75); 
+    transform: scale(1); 
 }
 
 .sub-container-2 img {
