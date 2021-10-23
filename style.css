@@ -33,7 +33,7 @@ nav {
     border-bottom: 1px solid gray;
     border-radius: .5px;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 2px 0px;
-    
+
 }
 
 @keyframes nav-hover {
@@ -52,36 +52,48 @@ nav {
     letter-spacing: 1px;
 }
 
-.letter-n{
+.letter-n {
     color: rgb(255, 187, 0);
-     font-size: 2.3rem;
+    font-size: 2.3rem;
 }
 
-.letter-r{
-    color: rgb(86, 209, 209); 
+.letter-r {
+    color: rgb(86, 209, 209);
     font-size: 1.6rem;
 }
 
-.left-nav h1:hover{
+.left-nav h1:hover {
     color: rgb(86, 209, 209);
     animation: wiggle 250ms infinite;
-  animation-timing-function: linear; 
+    animation-timing-function: linear;
     position: relative;
 
 }
-.letter-r:hover{
+
+.letter-r:hover {
     color: rgb(255, 187, 0);
 }
-.letter-n:hover{
+
+.letter-n:hover {
     color: rgb(86, 209, 209);
 }
 
 @keyframes wiggle {
-    0% { transform: translate(2px, 0); color: rgb(0, 255, 106); }
-    50% { transform: translate(-2px, 0); color: rgb(255, 136, 0);}
-    100% { transform: translate(2px, 0); color: rgb(72, 255, 0); }
-  }
-  
+    0% {
+        transform: translate(2px, 0);
+        color: rgb(255, 187, 0);
+    }
+
+    50% {
+        transform: translate(-2px, 0);
+    }
+
+    100% {
+        transform: translate(2px, 0);
+        color: rgb(86, 209, 209);
+    }
+}
+
 
 .left-nav p {
     display: flex;
@@ -115,26 +127,24 @@ nav {
     transition: .5s ease-in-out;
 }
 
-.center-nav ul li a:hover{
-    color:  rgb(255, 187, 0);
+.center-nav ul li a:hover {
+    color: rgb(255, 187, 0);
     text-transform: uppercase;
     font-weight: 600;
-    border-bottom: 1.5px solid rgb(255, 187, 0); 
+    border-bottom: 1.5px solid rgb(255, 187, 0);
 }
 
 .right-nav p a {
     font-weight: bold;
-    padding: 10px 20px 12px;
+    padding: 6px 20px 10px;
     border-radius: 5px;
     color: rgb(0, 0, 0);
     text-decoration: none;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     background-color: rgba(255, 212, 93, 0.726);
-    letter-spacing: 1.5px;
-    font-size: 1.2rem;
 }
 
-.right-nav :hover{
+.right-nav :hover {
     background-color: black;
     color: rgb(255, 187, 0);
     text-transform: capitalize;
@@ -152,7 +162,7 @@ nav {
 }
 
 .container-1 p {
-    line-height:1.5rem;
+    line-height: 1.5rem;
     margin-top: 3%;
     letter-spacing: .5px;
     padding-right: 35%;
@@ -163,28 +173,45 @@ nav {
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: 0% 5%;
+    padding: 0 5rem;
     justify-content: center;
     align-items: flex-start;
-    font-size: 1.2rem;
-    line-height: 45px;
     text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5);
 }
 
-.sub-container-1 h5{
+.linear-line{
+    width: 200px;
+    height: 5px;
+    background-image: linear-gradient(to right,rgb(255, 187, 0),rgb(86, 209, 209));
+    border-radius: 2px;
+    margin-bottom: 1.5rem;
+    animation: linear-line;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes linear-line {
+    0%{
+        background-image: linear-gradient(to right,rgb(255, 187, 0),rgb(86, 209, 209));
+    }
+    100%{
+        background-image: linear-gradient(to right,rgb(86, 209, 209),rgb(255, 187, 0));
+    }
+    
+}
+.sub-container-1 p {
     font-size: 1.2rem;
     font-weight: 500;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.3px;
 }
 
-.sub-container-1 ul{
-    list-style-type:;
-    padding-left: 30px;
-    line-height: normal;
-    font-size: 1.15rem;
+.sub-container-1 ul {
+    list-style-type:disc;
+    padding-left: 1.7rem;
+
 }
 
-.sub-container-1 .wrapper-p{
+.sub-container-1 .wrapper-p {
     visibility: hidden;
     animation-name: wrapper-p;
     animation-duration: 2s;
@@ -195,28 +222,29 @@ nav {
 
 @keyframes wrapper-p {
 
-    from{
+    from {
         opacity: 0;
         right: -500px;
         visibility: visible;
         transform: scale(.5);
     }
-    to{
+
+    to {
         opacity: 1;
-        right:0px;
+        right: 0px;
         visibility: visible;
     }
-    
+
 }
 
-.sub-container-1 .contact-me{
+.sub-container-1 .contact-me {
     width: 100%;
     margin-top: 5%;
     display: flex;
     justify-content: start;
 }
 
-.sub-container-1 .contact-me button{
+.sub-container-1 .contact-me button {
     color: black;
     padding: 2.5% 4%;
     border-radius: 5px;
@@ -225,60 +253,65 @@ nav {
     border: none;
 }
 
-button a{
+button a {
     color: black;
     text-decoration: none;
     font-size: 1rem;
-    font-weight:600;
+    font-weight: 600;
     transition: .5s ease-in-out;
 }
 
-button:first-child:hover a{
-    color: rgb(255, 187, 0) ;
+button:first-child:hover a {
+    color: rgb(255, 187, 0);
     text-transform: capitalize;
 }
 
-button:last-child:hover a{
+button:last-child:hover a {
     color: rgb(86, 209, 209);
     text-transform: capitalize;
 }
 
-.sub-container-1 .contact-me button:first-child:hover{
+.sub-container-1 .contact-me button:first-child:hover {
     background-color: rgb(0, 0, 0);
 }
 
-.sub-container-1 .contact-me button:last-child:hover{
+.sub-container-1 .contact-me button:last-child:hover {
     background-color: rgb(0, 0, 0);
 }
 
-.sub-container-1 .contact-me button:last-child{
+.sub-container-1 .contact-me button:last-child {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     background-color: rgba(177, 233, 255, 0.555);
     margin-left: 2%;
 
 }
 
-.sub-container-1 .contact-me button:first-child{
+.sub-container-1 .contact-me button:first-child {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     background-color: rgba(255, 212, 93, 0.726);
-    
+
 }
+
 .sub-container-2 {
     width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     animation-name: nasim;
-    animation-duration: 5s;
-    transform: scale(1); 
+    animation-duration: 1s
+}
+
+.wrapper {
+    width: 25rem;
+    height: 25rem;
+    position: relative;
 }
 
 .sub-container-2 img {
-    width: 45%;
-    height: 45%;
+    width: 25rem;
+    height: 25rem;
     border-radius: 50%;
-    border: #c78c67af solid 1.1vw;
+    border: #c78c67af solid 1rem;
     z-index: 1;
     box-shadow: rgba(248, 181, 119, 0.363) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     transform: rotate(-5deg);
@@ -286,26 +319,26 @@ button:last-child:hover a{
 
 
 .first-border {
-    width: 45%;
-    height: 45%;
+    width: 25rem;
+    height: 25rem;
     border-radius: 50%;
-    border: 1vw solid #ccbe71c9;
-    box-shadow: rgba(172, 156, 66, 0.774) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border: 1rem solid #ccbe71c9;
+    box-shadow: rgba(172, 156, 66, 0.774) 0px -23px 25px 0px inset, rgba(43, 34, 34, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     position: absolute;
     background-size: 100%;
-    top: 25%;
-    left: 28%;
+    top: 2rem;
+    left: 2rem;
 }
 
 .second-border {
-    width: 45%;
-    height: 45%;
+    width: 25rem;
+    height: 25rem;
     border-radius: 50%;
-    border: #75daf85d solid 1vw;
+    border: #75daf85d solid 1rem;
     box-shadow: rgba(94, 168, 187, 0.397) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     position: absolute;
-    top: 25%;
-    right: 30%;
+    top: -2rem;
+    right: 2rem;
 }
 
 
@@ -383,6 +416,7 @@ button:last-child:hover a{
     }
 
     to {
-        border-right-color: transparent;;
+        border-right-color: transparent;
+        ;
     }
 }
