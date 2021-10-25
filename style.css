@@ -18,8 +18,8 @@ body {
 }
 
 nav {
-    width: 92%;
-    margin-left: 4%;
+    width: 96%;
+    margin-left: 2%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -151,11 +151,10 @@ nav {
 }
 
 .container-1 {
-    margin: 4vh auto;
-    width: 96%;
+    margin: 4vh 0 6vh 0;
+    width: 100%;
     height: 90vh;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    border-radius: 25px;
     background-color: rgba(255, 255, 255, 0.89);
     display: flex;
     border-bottom: 3px solid gray;
@@ -178,10 +177,10 @@ nav {
     text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5);
 }
 
-.linear-line{
+.linear-line {
     width: 200px;
     height: 5px;
-    background-image: linear-gradient(to right,rgb(255, 187, 0),rgb(86, 209, 209));
+    background-image: linear-gradient(to right, rgb(255, 187, 0), rgb(86, 209, 209));
     border-radius: 2px;
     margin-bottom: 1.5rem;
     animation: linear-line;
@@ -190,14 +189,16 @@ nav {
 }
 
 @keyframes linear-line {
-    0%{
-        background-image: linear-gradient(to right,rgb(255, 187, 0),rgb(86, 209, 209));
+    0% {
+        background-image: linear-gradient(to right, rgb(255, 187, 0), rgb(86, 209, 209));
     }
-    100%{
-        background-image: linear-gradient(to right,rgb(86, 209, 209),rgb(255, 187, 0));
+
+    100% {
+        background-image: linear-gradient(to right, rgb(86, 209, 209), rgb(255, 187, 0));
     }
-    
+
 }
+
 .sub-container-1 p {
     width: 70%;
     font-size: 1.1rem;
@@ -207,7 +208,7 @@ nav {
 }
 
 .sub-container-1 ul {
-    list-style-type:disc;
+    list-style-type: disc;
     padding-left: 1.7rem;
     letter-spacing: 1px;
     color: rgb(77, 77, 77);
@@ -224,14 +225,14 @@ nav {
 @keyframes wrapper-p {
 
     0% {
-        visibility: visible ;
+        visibility: visible;
         opacity: 0;
     }
 
     100% {
-        visibility: visible ;
+        visibility: visible;
         opacity: 1;
-        
+
     }
 
 }
@@ -412,9 +413,10 @@ button:last-child:hover a {
         ;
     }
 }
+
 /* beginning of container-2 */
 
-.container-2{
+.container-2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -423,13 +425,13 @@ button:last-child:hover a {
     margin: 0 4%;
     position: absolute;
     bottom: 90px;
-    color:rgb(75, 73, 73);
+    color: rgb(75, 73, 73);
     letter-spacing: 1px;
     font-size: 1.3rem;
     border-top: 1.5px solid gray;
     padding-top: 1.5rem;
     border-radius: .5px;
-    animation:my-expertise;
+    animation: my-expertise;
     animation-duration: 1.5s;
 }
 
@@ -444,89 +446,107 @@ button:last-child:hover a {
     }
 }
 
-.left-item span:nth-child(3){
+.left-item span:nth-child(3) {
     margin-left: 10px;
 }
 
-.left-item p:hover :nth-child(odd){
+.left-item p:hover :nth-child(odd) {
     text-transform: capitalize;
     color: black;
 }
 
-.right-item{
+.right-item {
     display: flex;
     margin-bottom: 20px;
 }
 
-.right-item img{
+.right-item img {
     width: 35px;
     margin-left: 4rem;
     padding-top: 1.5rem;
-    
+
 }
 
-.right-item img:hover{
+.right-item img:hover {
     animation: logo-hover 1s infinite;
-    animation-timing-function: linear;  
+    animation-timing-function: linear;
 }
 
 @keyframes logo-hover {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.3)}
-    100% { transform: scale(1); }
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3)
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 /* media screen size */
 
 @media only screen and (max-width: 1200px) {
-  .wrapper ,.wrapper div, .wrapper img{
-      width: 20rem;
-      height: 20rem;
-  }
 
-  .wrapper img, .wrapper ,.wrapper div{
-    border-width: .7rem;
-}
+    .wrapper,
+    .wrapper div,
+    .wrapper img {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .wrapper img,
+    .wrapper,
+    .wrapper div {
+        border-width: .7rem;
+    }
 
 }
 
 
 @media only screen and (max-width: 992px) {
-    .wrapper ,.wrapper div, .wrapper img{
+
+    .wrapper,
+    .wrapper div,
+    .wrapper img {
         width: 15rem;
         height: 15rem;
     }
 
-    .wrapper img, .wrapper ,.wrapper div{
+    .wrapper img,
+    .wrapper,
+    .wrapper div {
         border-width: .5rem;
     }
 
-    .sub-container-1{
+    .sub-container-1 {
         font-size: small;
     }
 
     nav {
-        font-size: medium; 
+        font-size: medium;
     }
 
-    .container-2{
+    .container-2 {
         flex-direction: column;
         justify-content: center;
     }
 
-    .right-item{
+    .right-item {
         position: absolute;
         margin-bottom: -1.5rem;
     }
 
-    .right-item img{
+    .right-item img {
         width: 30px;
         margin-left: 2rem;
         position: relative;
         top: -.6rem;
     }
 
-    .left-item{
+    .left-item {
         position: relative;
         top: -1.25rem;
         letter-spacing: -2px;
@@ -535,14 +555,14 @@ button:last-child:hover a {
         font-family: sans-serif;
     }
 
-    .right-footer p{
+    .right-footer p {
         margin-left: 5px;
     }
-  }
+}
 
-  @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 
-    .container-1{
+    .container-1 {
         width: 100vw;
         border-radius: 0px;
         flex-direction: column-reverse;
@@ -550,94 +570,104 @@ button:last-child:hover a {
         align-items: center;
     }
 
-    .sub-container-2{
+    .container-2{
+        position: sticky;
+    }
+
+    .sub-container-2 {
         position: relative;
         top: -4rem;
         left: -3rem;
     }
-    
-    .sub-container-1 .wrapper-p p{
-        font-size: small;
+
+    .sub-container-1 .wrapper-p p {
+        width: 100%;
+        font-size: medium;
         line-height: 15px;
         letter-spacing: 1px;
     }
 
-    .sub-container-1 .wrapper-p li{
+    .sub-container-1 .wrapper-p li {
         font-size: small;
         line-height: 15px;
+        letter-spacing: 1px;
+        font-size: .95rem;
     }
 
-    button a{
+    button a {
         font-size: small;
     }
 
-    .wrapper ,.wrapper div, .wrapper img{
+    .wrapper,
+    .wrapper div,
+    .wrapper img {
         width: 10rem;
         height: 10rem;
         border-radius: 1rem;
     }
 
-    .wrapper img{
-    border: #c78c67af solid .25rem;
-        
-    }
-
-    .wrapper .first-border{
-    border: .25rem solid #ccbe71c9;
+    .wrapper img {
+        border: #c78c67af solid .25rem;
 
     }
 
-    .wrapper .second-border{
-    border: #75daf85d solid .25rem;
+    .wrapper .first-border {
+        border: .25rem solid #ccbe71c9;
 
     }
 
-    .fas{
+    .wrapper .second-border {
+        border: #75daf85d solid .25rem;
+
+    }
+
+    .fas {
         font-size: smaller;
     }
 
-    .wrapper-p{
+    .wrapper-p {
         font-size: 1rem;
     }
 
-    nav .right-nav p a{
+    nav .right-nav p a {
         padding: 5px 10px;
     }
 
-    .right-footer p{
+    .right-footer p {
         margin-left: 15px;
     }
 
-    .right-footer p a{
-        font-size:small;
+    .right-footer p a {
+        font-size: small;
     }
 
-    .left-footer{
+    .left-footer {
         font-size: x-small;
     }
-          
-  }
 
-  @media only screen and (max-width: 375px) {
-    .sub-container-1{
+}
+
+@media only screen and (max-width: 375px) {
+    .sub-container-1 {
         font-size: x-small;
     }
 
     nav {
-        font-size: x-small; 
+        font-size: x-small;
     }
 
-    .right-footer p a{
+    .right-footer p a {
         font-size: xx-small;
     }
-      
-    .left-footer{
+
+    .left-footer {
         font-size: xx-small;
     }
-  }
+}
+
 /* Beggining of footer */
 
-footer{
+footer {
     width: 100%;
     height: 50px;
     position: absolute;
@@ -655,32 +685,31 @@ footer{
     transition: 2s ease-in-out;
 }
 
-.right-footer{
+.right-footer {
     display: flex;
 }
 
-.right-footer p{
+.right-footer p {
     margin-left: 30px;
     transition: 250ms ease-in-out;
 }
-.right-footer p a{
+
+.right-footer p a {
     color: white;
 }
 
-.right-footer p:hover{
-    transform:scale(1.5);
+.right-footer p:hover {
+    transform: scale(1.5);
 }
 
 @keyframes footer {
-    from{
-        bottom: -250px; opacity: 0;
+    from {
+        bottom: -250px;
+        opacity: 0;
     }
-    to{
-        bottom: 0px; opacity: 1;
+
+    to {
+        bottom: 0px;
+        opacity: 1;
     }
 }
-  
-  
-
-  
-  
