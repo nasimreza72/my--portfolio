@@ -17,7 +17,7 @@ body {
 
 nav {
     width: 100%;
-    padding: 1em;
+    padding: .5rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -150,12 +150,10 @@ section {
 .wrapper{
     width: 90%;
     padding: 1rem 2rem;
-    background-image: linear-gradient(to right, rgb(186, 186, 186) ,white);
+    background-image: linear-gradient(to right,rgba(233, 250, 252, 0.61),rgba(250, 226, 190, 0.61) ,white);
     border-radius: 15px;
-}
-
-.left-section .image{
-    display: flex;
+    border-top: rgba(197, 212, 214, 0.61) 5px solid;
+    text-align: justify;
 }
 
 /* end of left section */
@@ -171,8 +169,10 @@ section {
     width: 50rem;
     height: 40rem;
     border-radius: 1rem;
-    opacity: .5;
+    opacity: .4;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-top: rgba(141, 189, 196, 0.61) 5px solid;
+
 }
 
 
@@ -232,21 +232,40 @@ footer {
 
 /* beggining of media screen */
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1400px) {
 
     section {
-        flex-direction: column;
+        flex-direction: column; 
+    }
 
-}
+    .left-section .wrapper{
+        position: absolute;
+        width: 50rem;
+        background-image: none;
+        top: 15rem;
+        border: none;
+    }
+
+
+    .wrapper p{
+        font-weight: bolder;
+        text-shadow: 2px 2px rgb(255, 255, 255);
+    }
+}   
 
 @media only screen and (max-width: 980px) {
 
-    .right-section form{
-        transform: scale(.8);
+    .left-section .wrapper{
         position: absolute;
-        top: 45%;
-        left: -5%;
-        margin-right: .5rem;
+        width: 40rem;
+        background-image: none;
+        top: 10rem;
+    }
+
+
+
+    .wrapper p{
+        font-weight: bolder;
     }
 
     nav {
@@ -261,17 +280,15 @@ footer {
 
 @media only screen and (max-width: 768px) {
 
-    .right-section form{
-        transform: scale(.7);
-        position: absolute;
-        top: 45%;
-        left: -10%;
-        margin-right: .5rem;
-    }
-
-
+   
     .left-footer {
         font-size: small;
+    }
+
+    .left-section .wrapper{
+        width: 30rem;
+        top: 5rem;
+        padding: .5rem;
     }
 }
 
@@ -279,6 +296,7 @@ footer {
 
     nav {
         font-size: x-small;
+        padding: .5rem;
     }
 
     .right-footer p a {

@@ -17,7 +17,7 @@ body {
 
 nav {
     width: 100%;
-    padding: 1em;
+    padding: .5rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -369,6 +369,10 @@ footer {
 
     .left-footer {
         font-size: small;
+    }
+
+    nav{
+        padding: .5rem;
     }
 }
 
