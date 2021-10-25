@@ -142,99 +142,38 @@ section {
 
 .left-section {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.empty-section {
-    width: 15rem;
-    height: 1rem;
-    background-color: rgb(255, 187, 0);
-    border-radius: 2px;
-    margin-bottom: 2rem;
-
+.wrapper{
+    width: 90%;
+    padding: 1rem 2rem;
+    background-image: linear-gradient(to right, rgb(186, 186, 186) ,white);
+    border-radius: 15px;
 }
 
-.left-section h1 {
-    font-size: 6rem;
-    line-height: 5rem;
-    color: rgb(255, 187, 0);
-    letter-spacing: .5rem;
-    margin-bottom: 2rem;
+.left-section .image{
+    display: flex;
 }
-
-.left-section p {
-    width: 60%;
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-    color: rgb(47, 116, 116);
-
-}
-
-.left-section .fas,
-.far {
-    color: rgb(0, 0, 0);
-    margin-right: 1rem;
-}
-
-
 
 /* end of left section */
 .right-section {
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: start;
     align-items: center;
 }
 
-.right-section form {
-    width: 36.9rem;
-    height: 26rem;
-    padding: 2rem;
-    background-image: linear-gradient(to right, rgba(158, 230, 243, 0.651), rgba(255, 231, 163, 0.966));
+.right-section img{
+    width: 50rem;
+    height: 40rem;
     border-radius: 1rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    opacity: .5;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
-
-input {
-    width: 15rem;
-    height: 3rem;
-    border-radius: .5rem;
-    padding: 1.5rem;
-    margin-right: 1rem;
-    margin-bottom: 1.5rem;
-    border: none;
-    background-color: rgb(255, 255, 255);
-    box-shadow: rgba(160, 160, 179, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-}
-
-
-textarea {
-    width: 31rem;
-    padding: 1.2rem;
-    border-radius: .5rem;
-    margin-bottom: 1.5rem;
-    border: none;
-    background-color: rgb(255, 255, 255);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-}
-
-
-button {
-    width: 15em;
-    height: 4rem;
-    border-radius: 1rem;
-    background-color: rgba(243, 197, 69, 0.836);
-    border: none;
-    transition: 1s ease-in-out;
-}
-
-button:hover {
-    color: rgb(255, 187, 0);
-    background-color: black;
-    text-transform: capitalize;
-}
-
-
-
 
 
 
@@ -297,42 +236,6 @@ footer {
 
     section {
         flex-direction: column;
-        padding: 1rem 2rem;
-
-    }
-
-    .empty-section {
-        width: 10rem;
-        height: .5rem;
-        background-color: rgb(255, 187, 0);
-        border-radius: 2px;
-        margin-bottom: 1rem;
-
-    }
-
-    .left-section h1 {
-        font-size: 3rem;
-        line-height: 2.5rem;
-        color: rgb(255, 187, 0);
-        letter-spacing: .5rem;
-        margin-bottom: 1rem;
-    }
-
-
-    .left-section p {
-        width: 100%;
-        font-size: 1.15rem;
-        margin-bottom: .5rem;
-        color: rgb(47, 116, 116);
-
-    }
-
-    .left-section .fas,
-    .far {
-        color: rgb(0, 0, 0);
-        margin-right: .5rem;
-        font-size: 1rem;
-    }
 
 }
 
